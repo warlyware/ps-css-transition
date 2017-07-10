@@ -1,24 +1,16 @@
 .square {
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     margin: 1rem 0 2rem 1rem;
     background-color: blue;
+    position: relative;
 }
 
-#square-one {
-    transition-property: background-color;
-    transition-duration: 5s;
+#square-to-skew {
+    background-color: purple;
+    transition: transform, 5s;
 }
 
-#square-one:hover {
-    background-color: green;
-}
-
-#square-two {
-    transition: border-radius 2s, background-color, 3s;
-}
-
-#square-two:hover {
-    border-radius: 50%;
-    background-color: pink;
+#square-to-skew:hover {
+    transform: skewX(-20deg);
 }
