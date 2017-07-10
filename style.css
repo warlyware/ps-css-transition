@@ -10,6 +10,16 @@
     transition-duration: 5s;
 }
 
-.square:hover {
+#square-one:hover {
     background-color: green;
+}
+
+#square-two {
+    transition-property: border-radius, background-color;
+    transition-duration: 5s, 2s;
+}
+
+#square-two:hover {
+    border-radius: 50%;
+    background-color: pink;
 }
