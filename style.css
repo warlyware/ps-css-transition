@@ -1,0 +1,15 @@
+.square {
+    height: 250px;
+    width: 250px;
+    margin: 1rem 0 2rem 1rem;
+    background-color: blue;
+}
+
+#square-one {
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+
+.square:hover {
+    background-color: green;
+}
