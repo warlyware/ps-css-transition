@@ -40,7 +40,7 @@
 
 #square-to-translate {
     background-color: orange;
-    transition: transform 5s, background-color 3s 2s;
+    transition: transform 5s ease-out, background-color 3s 2s;
 }
 
 #square-to-translate:hover {
