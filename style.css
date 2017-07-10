@@ -1,49 +1,47 @@
-.square {
-    height: 150px;
-    width: 150px;
-    background-color: blue;
+.outer-box {
+    height: 220px;
+    width: 220px;
+    display: inline-block;
+    margin: 50px 80px;
+    border: 1px solid black;
     position: relative;
+    perspective: 600px;
 }
 
-#square-to-skew {
-    background-color: purple;
-    transition: transform, 5s;
-}
-
-#square-to-skew:hover {
-    transform: skewX(-20deg);
-}
-
-#square-to-scale {
-    background: black;
+.inner-box {
     position: absolute;
-    left: 25%;
-    top: 25%;
-    width: 75px;
-    height: 75px;
-    transition: transform 5s, background-color 5s 2s;
+    width: 100%;
+    height: 100%;
 }
 
-#square-to-scale:hover {
-    background-color: blue;
-    transform: scale(2,2);
+#div-to-rotate-3d {
+    background: hsla(240, 70%, 50%, 0.6);
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
 
-#square-to-rotate {
-    background-color: tomato;
-    transition: transform 5s;
+#div-to-rotate-3d:hover {
+    transform: rotateX(1080deg) rotateY(-360deg) rotateZ(360deg);
 }
 
-#square-to-rotate:hover {
-    transform: rotate(360deg);
+#div-to-translate-3d {
+    background: hsla(136, 70%, 50%, 1);
+    transform-style: preserve-3d;
+    transition: transform 1s, box-shadow 1s;
 }
 
-#square-to-translate {
-    background-color: orange;
-    transition: transform 5s ease-out, background-color 3s 2s;
+#div-to-translate-3d:hover {
+    transform: translateX(40px) translateY(40px) translateZ(60px) rotateY(-3deg);
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.75);
 }
 
-#square-to-translate:hover {
-    background-color: green;
-    transform: translateX(900px) rotate(360deg);
+#div-to-scale-3d {
+    background: hsla(15, 70%, 50%, 0.6);
+    transform-style: preserve-3d;
+    transition: transform 1s, box-shadow 1s;
+}
+
+#div-to-scale-3d:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
 }
