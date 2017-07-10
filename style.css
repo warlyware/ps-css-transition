@@ -15,9 +15,7 @@
 }
 
 #square-two {
-    transition-property: border-radius, background-color;
-    transition-duration: 5s, 2s;
-    transition-delay: 3s, 2s;
+    transition: border-radius 2s, background-color, 3s;
 }
 
 #square-two:hover {
