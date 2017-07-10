@@ -1,7 +1,6 @@
 .square {
     height: 150px;
     width: 150px;
-    margin: 1rem 0 2rem 1rem;
     background-color: blue;
     position: relative;
 }
@@ -13,4 +12,19 @@
 
 #square-to-skew:hover {
     transform: skewX(-20deg);
+}
+
+#square-to-scale {
+    background: black;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 75px;
+    height: 75px;
+    transition: transform 5s, background-color 5s 2s;
+}
+
+#square-to-scale:hover {
+    background-color: blue;
+    transform: scale(2,2);
 }
